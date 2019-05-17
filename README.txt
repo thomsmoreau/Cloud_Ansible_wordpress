@@ -4,7 +4,7 @@ Terraform-----------------------------------------------------------------------
 
 Packer-------------------------------------------------------------------------------------
 Packer file is "scaleway-cloud-courses-template.json" :
-- In the .bashrc file write ' at the en of the file) : 
+- In the .bashrc file write (at the en of the file) : 
 	- Use: #sudo nano .bashrc then:
 		- SCW_TOKEN=<your_token> and export 
 		- SCALEWAY_ORGANIZATION=<your_organization_id>
