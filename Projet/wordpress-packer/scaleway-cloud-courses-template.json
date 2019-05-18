@@ -23,15 +23,16 @@
       "ssh_username": "root"
     }
   ],
-   "provisioners": [
+    "provisioners": [
     {
-      "type": "shell",
-      "script": "ubuntu_install.sh"
+      "type": "ansible",
+      "playbook_file": "playbook.yml"
     },
     {
       "type": "shell",
       "inline": ["sync"]
     }
+
   ]
 
 }
