@@ -8,7 +8,7 @@
   },
 
 
-  "builders": [
+    "builders": [
     {
       "organization_id": "{{ user `SCALEWAY_ORGANIZATION` }}",
       "api_token": "{{ user `api_token` }}",
