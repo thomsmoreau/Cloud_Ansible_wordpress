@@ -8,11 +8,11 @@
   },
 
 
-    "builders": [
+   "builders": [
     {
       "organization_id": "{{ user `SCALEWAY_ORGANIZATION` }}",
       "api_token": "{{ user `api_token` }}",
-      "server_name": "warriorzer",
+      "server_name": "Packer_test_build",
       "image_name": "Thomas_packer-image",
       "snapshot_name": "Thomas_packer-snapshot",
       "image": "{{ user `image` }}",
@@ -23,16 +23,16 @@
       "ssh_username": "root"
     }
   ],
+   
     "provisioners": [
-    {
-      "type": "ansible",
-      "playbook_file": "playbook.yml"
-    },
-    {
-      "type": "shell",
-      "inline": ["sync"]
-    }
-
-  ]
-
+        {
+            "type": "ansible-local",
+            "playbook_file": "./playbook.yml",
+            "role_paths": [
+                "./roles"
+            ]
+            
+        }
+    ]
 }
+
